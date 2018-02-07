@@ -1,0 +1,92 @@
+\documentclass[letterpaper,onecolumn,10pt]{article}
+\pagestyle{empty}
+\usepackage[hmargin=1in,vmargin=1in]{geometry}   %%Config the content address in the letters.
+
+\begin{document}
+\date{}
+\title{\fontsize{20}{0}\selectfont \bf Weidong Zhu}
+\author{\fontsize{12}{0}\selectfont\ Master, Xiamen University}
+\maketitle
+\thispagestyle{empty}
+\section*{\fontsize{16}{0}\selectfont Personal Information \\ \rule[-7pt]{1\textwidth}{1pt}}
+\textbf{Address: }No. 422 Siming South Road, 361005, Xiamen, China
+\hfill
+\textbf{Phone: }+86-18959218665\\
+\raggedright
+\textbf{My Github: }www.github.com/zwdong1994
+\hfill
+\textbf{Email: }zwdong1994@gmial.com
+
+
+\section*{\fontsize{16}{0}\selectfont Education \\ \rule[-7pt]{1\textwidth}{1pt}}
+2016 - now
+\hfill
+M.S, Computer Science, School of Information and Engineering\\
+\raggedleft
+{\bf Xiamen University, China}\\
+
+2012 - 2016
+\hfill
+B.S, Information Security, School of Computer Science and Technology\\
+\raggedleft
+{\bf Huazhong University of Science and Technology, China}
+
+\raggedright
+\section*{\fontsize{16}{0}\selectfont Research Intersts \\ \rule[-7pt]{1\textwidth}{1pt}}
+{\bf Areas:} Storage System, Database, Parallel/Distributed Systems\\
+{\bf Focus}: Deduplication, SSD, K-V Stores, SSD RAID
+
+\section*{\fontsize{16}{0}\selectfont Conference Publications \\ \rule[-7pt]{1\textwidth}{1pt}}
+\begin{itemize}
+\item Suzhen Wu, \underline {Weidong Zhu}, Guixin Liu, Hong Jiang, and Bo Mao. {\bf GC-aware Request Steering with Improved Performance and Reliability for SSD-based RAIDs}. To appear in Proceedings of the 32nd IEEE International Parallel \& Distributed Processing Symposium (IPDPS¡¯ 18). Vancouver, British Columbia, Canada, May 21-May 25, 2018.
+\end{itemize}
+
+\section*{\fontsize{16}{0}\selectfont Journal Publications \\ \rule[-7pt]{1\textwidth}{1pt}}
+\begin{itemize}
+\item Suzhen Wu, \underline {Weidong Zhu}, Bo Mao, Kuan-Ching Li. {\bf PP: Popularity-based Proactive Data Recovery for HDFS RAID systems}. Future Generation Computer Systems (2017), http://dx.doi.org/10.1016/j.future.2017.03.032.
+\end{itemize}
+
+\section*{\fontsize{16}{0}\selectfont Research \& Experience  \\ \rule[-7pt]{1\textwidth}{1pt}}
+\raggedright
+{\bf Research Assistant }
+\hfill
+{\bf Mentor: Suzhen Wu \hspace{0.3cm} July 2016 - now}\\
+\raggedright
+{\bf Advanced Storage Technology Lab, Xiamen University}
+\begin{itemize}
+\item \textbf{KV-based Stores} \\
+LSM tree is one of the most popular data structures in K-V stores implementation, because it transfers the random writes into sequential writes. However, there are still have some problem in the LSM-based K-V store, just like write/read amplification. So, I am studying the structure and characteristics of Leveldb(A LSM-based KV database.) and OpenChannel-SSD to find a way to decrease the impact that write/read amplifications brought about.
+\end{itemize}
+\begin{itemize}
+\item \textbf{Deduplication} \\
+Deduplication can significantly reduce write traffic and it has great profit for flash-based storage system, like SSD RAID. So, deduplication can help to improve the performance and reliability in the flash storage system. Moreover, with the advent of NVMe and 3D NAND flash technologies, the performance of flash-based storage systems has been improved significantly. So, this brought a new problem that the hash operation might become the bottleneck in the deduplication systems. So, I proceeded my research with this direction. \hfill {\bf (ATC'18  Waiting)}
+\end{itemize}
+\begin{itemize}
+\item \textbf{SSD-based Array} \\
+SSD-based RAIDs suffer from significant performance degradation whenever user I/O requests conflict with the ongoing Garbage Collection (GC) operations which introduces tail latency. And it will also brought great tail latency in the SSD-based Array. Moreover, the uncorrectable error occurred of SSD in the SSD-based RAIDs will trigger the fail-recovery process. So, proposing a scheme that aware of the GC process within an SSD-based RAID, to address both the performance and reliability issues of SSD-based RAIDs alluded to above is my main target in this research project. \hfill {\bf (IPDPS'18)}
+\end{itemize}
+
+\raggedright
+{\bf Team Leader}
+\hfill 
+{\bf 2014 - 2015}\\
+{\bf Information Security Lab, Huazhong University of Science and Technology}
+
+\begin{itemize}
+\item \textbf{A USB-based Device with Encryption} \\
+To ensure the security, encryption or the other security technology used on the USB-based device. However, existing schemes were always built in the software layer and its access control function is not perfect. So, we built a security system with USB-based device by using AES algorithm to encrypt the data and provided a strong access control system on the PC. Besides, the encryption system were built on the firmware of the USB-based device. 
+\end{itemize}
+
+\section*{\fontsize{16}{0}\selectfont Honors \& Awards  \\ \rule[-7pt]{1\textwidth}{1pt}}
+Excellent Student in the School, Xiamen University, China \hfill Nov. 2017\\
+National Scholarship, Ministry of Education of China \hfill Oct. 2017\\
+Third Price of 2015 National College Students Information Security Contest \hfill Aug. 2015  
+
+\section*{\fontsize{16}{0}\selectfont Computer Skills  \\ \rule[-7pt]{1\textwidth}{1pt}}
+\begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Operating System:} \>Linux, Windows \\
+    {\bf Database:} \>Leveldb\\
+    {\bf Programming:} \>C, C++, Python, GO, \LaTeX               
+\end{tabbing}
+\end{document}
