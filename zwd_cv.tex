@@ -35,17 +35,25 @@ B.S, Information Security, School of Computer Science and Technology\\
 
 \raggedright
 \section*{\fontsize{16}{0}\selectfont Research Intersts \\ \rule[-7pt]{1\textwidth}{1pt}}
-{\bf Areas:} Storage System, Database, Parallel/Distributed Systems\\
+{\bf Areas:} Storage System, Parallel/Distributed Systems, Database\\
 {\bf Focus}: Deduplication, SSD, K-V Stores, SSD RAID
 
 \section*{\fontsize{16}{0}\selectfont Conference Publications \\ \rule[-7pt]{1\textwidth}{1pt}}
 \begin{itemize}
-\item Suzhen Wu, \underline {Weidong Zhu}, Guixin Liu, Hong Jiang, and Bo Mao. {\bf GC-aware Request Steering with Improved Performance and Reliability for SSD-based RAIDs}. To appear in Proceedings of the 32nd IEEE International Parallel \& Distributed Processing Symposium (IPDPS¡¯ 18). Vancouver, British Columbia, Canada, May 21-May 25, 2018.
+\item Bo Mao, \underline {Weidong Zhu}, Suzhen Wu and Hong Jiang. {\bf EaD: a Collision-free and High Performance Deduplication Scheme for Flash Storage Systems}. The 36th IEEE International Conference on Computer Design (ICCD' 18). Orlando, Florida, USA, October 7-10, 2018. (Submitting)
+\end{itemize}
+
+\begin{itemize}
+\item Suzhen Wu, \underline {Weidong Zhu}, Guixin Liu, Hong Jiang, and Bo Mao. {\bf GC-aware Request Steering with Improved Performance and Reliability for SSD-based RAIDs}. In Proceedings of the 32nd IEEE International Parallel \& Distributed Processing Symposium (IPDPS¡¯ 18). Vancouver, British Columbia, Canada, May 21-May 25, 2018.
 \end{itemize}
 
 \section*{\fontsize{16}{0}\selectfont Journal Publications \\ \rule[-7pt]{1\textwidth}{1pt}}
 \begin{itemize}
-\item Suzhen Wu, \underline {Weidong Zhu}, Bo Mao, Kuan-Ching Li. {\bf PP: Popularity-based Proactive Data Recovery for HDFS RAID systems}. Future Generation Computer Systems (2017), http://dx.doi.org/10.1016/j.future.2017.03.032.
+\item Suzhen Wu, \underline {Weidong Zhu}, Hong Jiang, and Bo Mao. {\bf GC-Steering: GC-aware Request Steering with Improved Performance and Reliability for SSD-based RAIDs}. IEEE Transactions on Parallel and Distributed Systems. (Submitting)
+\end{itemize}
+
+\begin{itemize}
+\item Suzhen Wu, \underline {Weidong Zhu}, Bo Mao, Kuan-Ching Li. {\bf PP: Popularity-based Proactive Data Recovery for HDFS RAID systems}. Future Generation Computer Systems. 86: 1146-1153, September 2018.
 \end{itemize}
 
 \section*{\fontsize{16}{0}\selectfont Research \& Experience  \\ \rule[-7pt]{1\textwidth}{1pt}}
@@ -57,11 +65,11 @@ B.S, Information Security, School of Computer Science and Technology\\
 {\bf Advanced Storage Technology Lab, Xiamen University}
 \begin{itemize}
 \item \textbf{KV-based Stores} \\
-LSM tree is one of the most popular data structures in K-V stores implementation, because it transfers the random writes into sequential writes. However, there are still have some problem in the LSM-based K-V store, just like write/read amplification. So, I am studying the structure and characteristics of Leveldb(A LSM-based KV database.) and OpenChannel-SSD to find a way to decrease the impact that write/read amplifications brought about.
+LSM tree is one of the most popular data structures in K-V stores implementation, because it transfers the random writes into sequential writes. However, there are still have some problems in the LSM-based K-V store, just like write/read amplification. Therefore, I am studying the structure and characteristics of Leveldb(A LSM-based KV database.) and OpenChannel-SSD to find a way to lower the impact that write/read amplifications brought about.
 \end{itemize}
 \begin{itemize}
 \item \textbf{Deduplication} \\
-Deduplication can significantly reduce write traffic and it has great profit for flash-based storage system, like SSD RAID. So, deduplication can help to improve the performance and reliability in the flash storage system. Moreover, with the advent of NVMe and 3D NAND flash technologies, the performance of flash-based storage systems has been improved significantly. So, this brought a new problem that the hash operation might become the bottleneck in the deduplication systems. So, I proceeded my research with this direction.
+Deduplication can significantly reduce write traffic and it has great profit for flash-based storage system, like SSD RAID. So, deduplication can help to improve the performance and reliability in the flash storage system. Moreover, with the advent of NVMe and 3D NAND flash technologies, the performance of flash-based storage systems has been improved significantly. Therefore, this brought a new problem that the hash operation might become the bottleneck in the deduplication systems. So, I proceeded my research with this direction. \hfill {\bf (ICCD'18, Submitting)}
 \end{itemize}
 \begin{itemize}
 \item \textbf{SSD-based Array} \\
