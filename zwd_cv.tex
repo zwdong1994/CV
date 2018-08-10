@@ -36,11 +36,11 @@ B.S, Information Security, School of Computer Science and Technology\\
 \raggedright
 \section*{\fontsize{16}{0}\selectfont Research Intersts \\ \rule[-7pt]{1\textwidth}{1pt}}
 {\bf Areas:} Storage System, Parallel/Distributed Systems, Database\\
-{\bf Focus}: Deduplication, SSD, K-V Stores, SSD RAID
+{\bf Focus}: Deduplication, SSD, K-V Stores, SSD-based Array
 
 \section*{\fontsize{16}{0}\selectfont Conference Publications \\ \rule[-7pt]{1\textwidth}{1pt}}
 \begin{itemize}
-\item Bo Mao, \underline {Weidong Zhu}, Suzhen Wu and Hong Jiang. {\bf EaD: a Collision-free and High Performance Deduplication Scheme for Flash Storage Systems}. The 36th IEEE International Conference on Computer Design (ICCD' 18). Orlando, Florida, USA, October 7-10, 2018. (Submitting)
+\item Bo Mao, \underline {Weidong Zhu}, Suzhen Wu and Hong Jiang. {\bf EaD: a Collision-free and High Performance Deduplication Scheme for Flash Storage Systems}. (In Submission, 2018)
 \end{itemize}
 
 \begin{itemize}
@@ -49,7 +49,7 @@ B.S, Information Security, School of Computer Science and Technology\\
 
 \section*{\fontsize{16}{0}\selectfont Journal Publications \\ \rule[-7pt]{1\textwidth}{1pt}}
 \begin{itemize}
-\item Suzhen Wu, \underline {Weidong Zhu}, Hong Jiang, and Bo Mao. {\bf GC-Steering: GC-aware Request Steering with Improved Performance and Reliability for SSD-based RAIDs}. IEEE Transactions on Parallel and Distributed Systems. (Submitting)
+\item Suzhen Wu, \underline {Weidong Zhu}, Hong Jiang, and Bo Mao. {\bf GC-Steering: GC-aware Request Steering with Improved Performance and Reliability for SSD-based RAIDs}. IEEE Transactions on Parallel and Distributed Systems. (In Submission)
 \end{itemize}
 
 \begin{itemize}
@@ -65,11 +65,11 @@ B.S, Information Security, School of Computer Science and Technology\\
 {\bf Advanced Storage Technology Lab, Xiamen University}
 \begin{itemize}
 \item \textbf{KV-based Stores} \\
-LSM tree is one of the most popular data structures in K-V stores implementation, because it transfers the random writes into sequential writes. However, there are still have some problems in the LSM-based K-V store, just like write/read amplification. Therefore, I am studying the structure and characteristics of Leveldb(A LSM-based KV database.) and OpenChannel-SSD to find a way to lower the impact that write/read amplifications brought about.
+CockroachDB is a distributed SQL database built on a transactional and strongly-consistent key-value store. And CockroachDB uses RocksDB as its key-value store engine. However, in the CockroachDB,  there are some CPU-consuming functions and operations like SELECT, encoding, are locate at the place where is far away from the storage level. So, the length of IO path is too long that will cause more writes and reads in order to transfer the data from the storage layer to the CockroachDB. Therefore, I modified the code of CockroachDB to move the CPU-consuming functions to the \underline {storage layer}(RocksDB), which is called CRDB-Near. And the repository name of CRDB-Near in my github is \underline {cockroach-new}.
 \end{itemize}
 \begin{itemize}
 \item \textbf{Deduplication} \\
-Deduplication can significantly reduce write traffic and it has great profit for flash-based storage system, like SSD RAID. So, deduplication can help to improve the performance and reliability in the flash storage system. Moreover, with the advent of NVMe and 3D NAND flash technologies, the performance of flash-based storage systems has been improved significantly. Therefore, this brought a new problem that the hash operation might become the bottleneck in the deduplication systems. So, I proceeded my research with this direction. \hfill {\bf (ICCD'18, Submitting)}
+Deduplication can significantly reduce write traffic and it has great profit for flash-based storage system, like SSD RAID. So, deduplication can help to improve the performance and reliability in the flash storage system. Moreover, with the advent of NVMe and 3D NAND flash technologies, the performance of flash-based storage systems has been improved significantly. Therefore, this brought a new problem that the hash operation might become the bottleneck in the deduplication systems. So, I proceeded my research with this direction. \hfill {\bf (in Submition)}
 \end{itemize}
 \begin{itemize}
 \item \textbf{SSD-based Array} \\
@@ -88,6 +88,7 @@ To ensure the security of USB-based device, encryption or the other security tec
 \end{itemize}
 
 \section*{\fontsize{16}{0}\selectfont Honors \& Awards  \\ \rule[-7pt]{1\textwidth}{1pt}}
+IPDPS'18 Student Grant \hfill May 2018\\
 Excellent Merit Student, Xiamen University, China \hfill Nov. 2017\\
 National Scholarship, Ministry of Education of China \hfill Oct. 2017\\
 Third Price of 2015 National College Students Information Security Contest, Ministry of Education of China\hfill Aug. 2015
@@ -97,6 +98,6 @@ Third Price of 2015 National College Students Information Security Contest, Mini
    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
     {\bf Operating System:} \>Linux, Windows \\
     {\bf Database:} \>Leveldb\\
-    {\bf Programming:} \>C, C++, Python, GO, \LaTeX
+    {\bf Programming:} \>C, C++, GO, Python, \LaTeX
 \end{tabbing}
 \end{document}
