@@ -1,6 +1,6 @@
 \documentclass[letterpaper,onecolumn,10pt]{article}
 \pagestyle{empty}
-\usepackage[hmargin=0.6in,vmargin=0.2in]{geometry}   %%Config the content location in the letters.
+\usepackage[hmargin=0.6in,vmargin=0.7in]{geometry}   %%Config the content location in the letters.
 \usepackage{url}
 
 \begin{document}
@@ -51,10 +51,17 @@ B.E., Information Security, School of Computer Science and Technology\\
 	\item \underline{Weidong Zhu}, Grant Hernandez, Washington Garcia, Hunter Searle, Joseph Choi, and Kevin R. B. Butler. {\bf In submission}. 2020. 
 \end{itemize}
 \begin{itemize}
+	\item Suzhen Wu, Jindong Zhou, \underline{Weidong Zhu}, Hong Jiang, Zhijie Huang, Zhirong Shen, and Bo Mao. {\bf EaD: a Collision-free and High Performance ECC assisted Deduplication Scheme for Flash Storage}. In Proceedings of the 38th IEEE International Conference on Computer Design (ICCD 20). 2020. 
+\end{itemize}
+\begin{itemize}
 \item Suzhen Wu, \underline {Weidong Zhu}, Guixin Liu, Hong Jiang, and Bo Mao. {\bf GC-aware Request Steering with Improved Performance and Reliability for SSD-based RAIDs}. In Proceedings of the 32nd IEEE International Parallel \& Distributed Processing Symposium (IPDPS 18). Vancouver, British Columbia, Canada, May 21-May 25, 2018.
 \end{itemize}
 
 \section*{\fontsize{16}{0}\selectfont Journal Publications \\ \rule[-7pt]{1\textwidth}{1pt}}
+
+\begin{itemize}
+	\item Suzhen Wu, \underline {Weidong Zhu}, Bo Mao, Kuan-Ching Li. {\bf GC-Steering: GC-aware Request Steering and Parallel Reconstruction Optimizations for SSD-based RAIDs}. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), doi: 10.1109/TCAD.2020.2974346, 2020.
+\end{itemize}
 
 \begin{itemize}
 \item Suzhen Wu, \underline {Weidong Zhu}, Bo Mao, Kuan-Ching Li. {\bf PP: Popularity-based Proactive Data Recovery for HDFS RAID Systems}. Future Generation Computer Systems. 86: 1146-1153, September 2018.
@@ -80,7 +87,7 @@ B.E., Information Security, School of Computer Science and Technology\\
 {\bf Advanced Storage Technology Lab, Xiamen University}
 \begin{itemize}
 \item \textbf{KV-based Stores} \\
-CockroachDB is a distributed SQL database built on a transactional and strongly-consistent key-value store. And CockroachDB uses RocksDB as its key-value store engine. However, in the CockroachDB,  there are some CPU-consuming functions and operations like SELECT, encoding, are locate at the place where is far away from the storage level. So, the length of IO path is too long that will cause more writes and reads in order to transfer the data from the storage layer to the CockroachDB. Therefore, I modified the code of CockroachDB to move the CPU-consuming functions to the \underline {storage layer}(RocksDB), which is called CRDB-Near.
+CockroachDB is a distributed SQL database built on a transactional and strongly-consistent key-value store. And CockroachDB uses RocksDB as its key-value store engine. However, in the CockroachDB,  there are some CPU-consuming functions and operations like SELECT, encoding, are locate at the place where is far away from the storage level. So, the length of IO path is too long that will cause more writes and reads in order to transfer the data from the storage layer to the CockroachDB. Therefore, I modified the code of CockroachDB to move the CPU-consuming functions to the storage layer (RocksDB), which is called CRDB-Near.
 \end{itemize}
 \begin{itemize}
 \item \textbf{Deduplication} \\
